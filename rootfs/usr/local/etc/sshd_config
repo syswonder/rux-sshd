@@ -1,0 +1,13 @@
+HostKey /usr/local/etc/ssh_host_ed25519_key
+AuthorizedKeysFile /root/.ssh/authorized_keys
+PasswordAuthentication no
+PubkeyAuthentication yes
+AddressFamily inet
+LogLevel DEBUG3
+PermitTTY yes
+PermitRootLogin yes
+Port 5555
+
+KexAlgorithms curve25519-sha256,curve25519-sha256@libssh.org,sntrup761x25519-sha512
+Ciphers aes128-ctr,aes192-ctr
+MACs hmac-sha2-256
