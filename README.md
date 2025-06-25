@@ -30,3 +30,8 @@
    ```shell
    make run ARCH=aarch64 A=apps/c/openssh V9P=y MUSL=y NET=y V=2
    ```
+
+5. Use the client to connect:
+   ```shell
+   ssh -vvv -p 5555 syswonder@localhost -i ~/.ssh/id_ed25519
+   ```
